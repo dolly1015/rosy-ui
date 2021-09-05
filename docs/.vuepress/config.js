@@ -5,19 +5,43 @@ function resolve (dir) {
 
 module.exports = {
     title: 'Rosy UI',
-    base: '/rosy-ui/',
+    base: '',
     description: 'Rosy UI Document',
     head: [
         ['link', { rel: 'shortcut icon', href: '/favicon.ico' }]
     ],
     themeConfig: {
+        lastUpdated: '最后更新',
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Github', link: 'https://github.com/qiudongwei/ange-ui' },
+            { text: 'Github', link: 'https://github.com/linxiaodi/rosy-ui' },
         ],
         sidebar: [
-            ['/views/button', '按钮 Button'],
-            ['/views/test', '测试 test'],
+            {
+                title: '介绍',
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    '/guide/install',
+                    '/guide/use',
+                ]
+            },
+            {
+                title: '组件',
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    '/component/button',
+                ]
+            }
+            // {
+            //     title: '组件',
+            //     collapsable: false,
+            //     children: [
+            //         '/views/button'
+            //     ]
+            // }
+            // ['/views/test', '测试 test'],
         ]
     },
     markdown: {
@@ -35,5 +59,6 @@ module.exports = {
               '@utils': resolve('src/utils')
             }
         }
-    }
+    },
+    plugins: ['demo-container'],
 }
