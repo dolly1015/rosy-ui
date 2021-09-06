@@ -6,3 +6,10 @@ import Vue from 'vue'
 
 Vue.use(RosyUI)
 ```
+
+
+```
+import { Button } from 'rosy-ui'
+
+Vue.use(Button)
+```

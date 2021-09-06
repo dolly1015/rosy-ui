@@ -1,24 +1,26 @@
 ### 按钮 Button
 
-#### 正常状态（Normal Size）
-<div class="component-wrapper">
-    <rs-button class="mr10" title="默认按钮">默认按钮</rs-button>
-    <rs-button class="mr10" primary>主按钮</rs-button>
-    <rs-button class="mr10" secondary>次级按钮</rs-button>
-    <rs-button class="mr10" dashed>虚线按钮</rs-button>
-    <rs-button class="mr10" link>文字按钮</rs-button>
-    <rs-button class="mr10" link href="//www.baidu.com" target="_blank" external>外链按钮</rs-button>
-</div>
+#### 基础使用
 
-``` vue
-<rs-button class="mr10" title="默认按钮">默认按钮</rs-button>
-<rs-button class="mr10" primary>主按钮</rs-button>
-<rs-button class="mr10" secondary>次级按钮</rs-button>
-<rs-button class="mr10" dashed>虚线按钮</rs-button>
-<rs-button class="mr10" link>文字按钮</rs-button>
-<rs-button class="mr10" link href="//www.baidu.com" target="_blank" external>外链按钮</rs-button>
+::: demo 这是一个基础使用示例
+```html
+<template>
+    <div class="component-wrapper">
+        <rs-button round title="默认按钮">默认按钮</rs-button>
+        <rs-button plain round @click="makeConsole" type="primary">主按钮</rs-button>
+    </div>
+</template>
+<script>
+export default {
+    methods: {
+        makeConsole() {
+            console.log(123456)
+        }
+    }
+}
+</script>
 ```
-
+:::
 
 
 #### API

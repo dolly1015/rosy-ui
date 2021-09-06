@@ -1,12 +1,15 @@
 <template>
-    <button>
+    <el-button v-bind="$attrs">
         <slot></slot>
-    </button>
+    </el-button>
 </template>
 
 <script>
 export default {
     name: 'rs-button',
-    props: []
+    data() {
+        return {
+        }
+    }
 }
 </script>

@@ -3,8 +3,7 @@ import components from './components'
 
 function install(Vue, opts = {}) {
     Object.values(components).forEach((each) => {
-        console.log(each.name)
-        Vue.component(each.name, each)
+        Vue.use(each)
     })
 }
 

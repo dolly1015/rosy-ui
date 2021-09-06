@@ -32,6 +32,7 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     '/component/button',
+                    '/component/leadingIn',
                 ]
             }
             // {
