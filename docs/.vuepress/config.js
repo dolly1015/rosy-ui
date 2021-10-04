@@ -5,7 +5,7 @@ function resolve (dir) {
 
 module.exports = {
     title: 'Rosy UI',
-    base: '',
+    base: '/',
     description: 'Rosy UI Document',
     head: [
         ['link', { rel: 'shortcut icon', href: '/favicon.ico' }]
