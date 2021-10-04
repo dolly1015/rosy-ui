@@ -8,6 +8,8 @@ git checkout gh-pages
 
 rm -rf ./gh-pages/
 
+mkdir ./gh-pages
+
 mv ./docs/.vuepress/dist/* ./gh-pages
 
 git add . && git commit -m 'feat: deploy' && git push origin gh-pages -f
