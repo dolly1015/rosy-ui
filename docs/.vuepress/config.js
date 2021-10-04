@@ -3,9 +3,10 @@ function resolve (dir) {
     return path.join(__dirname, '..' ,'..', dir)
 }
 
+
 module.exports = {
     title: 'Rosy UI',
-    base: '/rosy-ui/',
+    base: process.env.NODE_ENV === 'development' ? '' : '/rosy-ui/',
     description: 'Rosy UI Document',
     head: [
         ['link', { rel: 'shortcut icon', href: '/favicon.ico' }]
