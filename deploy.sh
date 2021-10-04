@@ -7,7 +7,7 @@ npm run build:docs
 git checkout gh-pages
 
 rm -rf *.html
-rm -rf asseets/
+rm -rf assets/
 rm -rf component/
 rm -rf guide/
 
