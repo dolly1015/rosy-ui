@@ -6,10 +6,11 @@ npm run build:docs
 
 git checkout gh-pages
 
-rm -rf ./gh-pages/
+rm -rf *.html
+rm -rf asseets/
+rm -rf component/
+rm -rf guide/
 
-mkdir ./gh-pages
-
-mv ./docs/.vuepress/dist/* ./gh-pages
+mv ./docs/.vuepress/dist/* ./
 
 git add . && git commit -m 'feat: deploy' && git push origin gh-pages -f
