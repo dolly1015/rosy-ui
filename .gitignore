@@ -1,4 +1,4 @@
 node_modules
 .vscode
 .idea
-.vuepress/dist/
+docs/.vuepress/dist/
