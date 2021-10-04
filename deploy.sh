@@ -6,10 +6,12 @@ npm run build:docs
 
 git checkout gh-pages
 
-rm -rf *.html
-rm -rf assets/
-rm -rf component/
-rm -rf guide/
-rm -rf favicon.ico
+rm -rf ./gh-pages/
 
-mv ./docs/.vuepress/dist/* ./
+mv ./docs/.vuepress/dist/* ./gh-pages
+
+git add . 
+&&
+git commit -m 'feat: deploy'
+&&
+git push origin gh-pages -f
