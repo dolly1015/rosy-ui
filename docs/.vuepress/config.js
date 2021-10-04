@@ -5,7 +5,7 @@ function resolve (dir) {
 
 module.exports = {
     title: 'Rosy UI',
-    base: 'https://dolly1015.github.io/rosy-ui/',
+    base: '/rosy-ui/',
     description: 'Rosy UI Document',
     head: [
         ['link', { rel: 'shortcut icon', href: '/favicon.ico' }]

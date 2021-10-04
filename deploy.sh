@@ -13,4 +13,4 @@ rm -rf guide/
 
 mv ./docs/.vuepress/dist/* ./
 
-git add . && git commit -m 'feat: deploy' && git push origin gh-pages -f
+git add . && git commit -m 'feat: deploy' && git push origin gh-pages -f && git checkout master
